@@ -1,0 +1,14 @@
+import pandas as pd
+import os
+y = pd.read_excel(os.path.join('D:/', '1.xlsx'))
+print(y.head())
+
+
+
+
+df = pd.read_csv(os.path.join('D:/', '1.xlsx'))
+x = df.loc[:,['毒品']]
+x.columns = ['發生數','破獲數','破獲率']
+x.to_excel(os.path.join('D:/', '1.xlsx'))
+print(type(x))
+x.head()
