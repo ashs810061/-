@@ -20,7 +20,7 @@ def send():
 
 
     smtpssl=smtplib.SMTP_SSL("smtp.gmail.com", 465)
-    smtpssl.login(from_addr, "E126142811")
+    smtpssl.login(from_addr, "")
 
     msg = '現在 復興站 PM2.5='+site['PM25']
     mime=MIMEText(msg, "plain", "utf-8")
